@@ -2,8 +2,8 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 
-const char* ssid = "AP602_2";
-const char* passwd = "09080411";
+const char* ssid = "teste";
+const char* passwd = "blabla";
 
 const char* serverName = "http://loclahost:3000/test";
 
