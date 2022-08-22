@@ -3,9 +3,15 @@ const express = require("express");
 const app = express();
 
 const PORT = 3000;
-
+app.use(express.json());
 app.get("/test", (req, res) => {
   res.send("Hello world!");
+});
+
+app.post("/test", (req, res) => {
+  console.log("**req.body**", req.body);
+
+  res.send().status(200);
 });
 
 /*
